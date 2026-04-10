@@ -1,0 +1,83 @@
+{
+  "coin": "SOL",
+  "cash": 80.0,
+  "holdings": 0.2397308,
+  "avgBuyPrice": 83.42690997,
+  "realizedPnl": 0.0,
+  "totalFeesPaid": 0.052000000000000005,
+  "wins": 0,
+  "totalSellTrades": 0,
+  "lastPrice": 83.21,
+  "lastUpdated": "2026-04-10T01:33:01.031351+00:00",
+  "priceHistory": [
+    83.21
+  ],
+  "priceTimestamps": [
+    "Apr 10 01:33"
+  ],
+  "trades": [
+    {
+      "ts": "2026-04-10T01:33:01.031351+00:00",
+      "coin": "SOL",
+      "type": "BUY",
+      "coins": 0.2397308,
+      "price": 83.21,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 80.0,
+      "source": "BOT",
+      "reason": "INITIAL ENTRY"
+    }
+  ],
+  "analytics": {
+    "dayHigh": 83.21,
+    "dayLow": 83.21,
+    "sessionStart": 83.21,
+    "totalBuyVolume": 20.0,
+    "totalSellVolume": 0.0,
+    "largestWin": 0.0,
+    "largestLoss": 0.0,
+    "consecutiveWins": 0,
+    "consecutiveLosses": 0,
+    "dailySnapshots": [],
+    "strategyAlerts": []
+  },
+  "ruleStats": {
+    "INITIAL_ENTRY": {
+      "triggers": 1,
+      "totalUSD": 20.0
+    },
+    "STOP_LOSS": {
+      "triggers": 0,
+      "wins": 0,
+      "losses": 0,
+      "totalPnl": 0.0
+    },
+    "TAKE_PROFIT": {
+      "triggers": 0,
+      "wins": 0,
+      "losses": 0,
+      "totalPnl": 0.0
+    },
+    "DIP_BUY": {
+      "triggers": 0,
+      "totalUSD": 0.0
+    },
+    "MOMENTUM": {
+      "triggers": 0,
+      "wins": 0,
+      "losses": 0,
+      "totalPnl": 0.0
+    },
+    "RELOAD": {
+      "triggers": 0,
+      "totalUSD": 0.0
+    },
+    "HOLD": {
+      "triggers": 0
+    },
+    "runsWithNoTrade": 0,
+    "totalRuns": 1
+  }
+}

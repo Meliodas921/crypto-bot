@@ -1,0 +1,83 @@
+{
+  "coin": "BTC",
+  "cash": 80.0,
+  "holdings": 0.00027736,
+  "avgBuyPrice": 72109.48466012,
+  "realizedPnl": 0.0,
+  "totalFeesPaid": 0.05199999999999999,
+  "wins": 0,
+  "totalSellTrades": 0,
+  "lastPrice": 71922.0,
+  "lastUpdated": "2026-04-10T01:33:01.030533+00:00",
+  "priceHistory": [
+    71922.0
+  ],
+  "priceTimestamps": [
+    "Apr 10 01:33"
+  ],
+  "trades": [
+    {
+      "ts": "2026-04-10T01:33:01.030533+00:00",
+      "coin": "BTC",
+      "type": "BUY",
+      "coins": 0.00027736,
+      "price": 71922.0,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 80.0,
+      "source": "BOT",
+      "reason": "INITIAL ENTRY"
+    }
+  ],
+  "analytics": {
+    "dayHigh": 71922.0,
+    "dayLow": 71922.0,
+    "sessionStart": 71922.0,
+    "totalBuyVolume": 20.0,
+    "totalSellVolume": 0.0,
+    "largestWin": 0.0,
+    "largestLoss": 0.0,
+    "consecutiveWins": 0,
+    "consecutiveLosses": 0,
+    "dailySnapshots": [],
+    "strategyAlerts": []
+  },
+  "ruleStats": {
+    "INITIAL_ENTRY": {
+      "triggers": 1,
+      "totalUSD": 20.0
+    },
+    "STOP_LOSS": {
+      "triggers": 0,
+      "wins": 0,
+      "losses": 0,
+      "totalPnl": 0.0
+    },
+    "TAKE_PROFIT": {
+      "triggers": 0,
+      "wins": 0,
+      "losses": 0,
+      "totalPnl": 0.0
+    },
+    "DIP_BUY": {
+      "triggers": 0,
+      "totalUSD": 0.0
+    },
+    "MOMENTUM": {
+      "triggers": 0,
+      "wins": 0,
+      "losses": 0,
+      "totalPnl": 0.0
+    },
+    "RELOAD": {
+      "triggers": 0,
+      "totalUSD": 0.0
+    },
+    "HOLD": {
+      "triggers": 0
+    },
+    "runsWithNoTrade": 0,
+    "totalRuns": 1
+  }
+}
