@@ -1,21 +1,36 @@
 {
   "coin": "SOL",
-  "cash": 80.0,
-  "holdings": 0.2397308,
-  "avgBuyPrice": 83.42690997,
+  "cash": 60.0,
+  "holdings": 0.47972118,
+  "avgBuyPrice": 83.38176825,
   "realizedPnl": 0.0,
-  "totalFeesPaid": 0.052000000000000005,
+  "totalFeesPaid": 0.10400000000000001,
   "wins": 0,
   "totalSellTrades": 0,
-  "lastPrice": 83.21,
-  "lastUpdated": "2026-04-10T01:33:01.031351+00:00",
+  "lastPrice": 83.12,
+  "lastUpdated": "2026-04-10T04:33:08.395007+00:00",
   "priceHistory": [
-    83.21
+    83.21,
+    83.12
   ],
   "priceTimestamps": [
-    "Apr 10 01:33"
+    "Apr 10 01:33",
+    "Apr 10 04:33"
   ],
   "trades": [
+    {
+      "ts": "2026-04-10T04:33:08.395007+00:00",
+      "coin": "SOL",
+      "type": "BUY",
+      "coins": 0.23999038,
+      "price": 83.12,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 60.0,
+      "source": "BOT",
+      "reason": "RELOAD"
+    },
     {
       "ts": "2026-04-10T01:33:01.031351+00:00",
       "coin": "SOL",
@@ -32,9 +47,9 @@
   ],
   "analytics": {
     "dayHigh": 83.21,
-    "dayLow": 83.21,
+    "dayLow": 83.12,
     "sessionStart": 83.21,
-    "totalBuyVolume": 20.0,
+    "totalBuyVolume": 40.0,
     "totalSellVolume": 0.0,
     "largestWin": 0.0,
     "largestLoss": 0.0,
@@ -71,13 +86,13 @@
       "totalPnl": 0.0
     },
     "RELOAD": {
-      "triggers": 0,
-      "totalUSD": 0.0
+      "triggers": 1,
+      "totalUSD": 20.0
     },
     "HOLD": {
       "triggers": 0
     },
     "runsWithNoTrade": 0,
-    "totalRuns": 1
+    "totalRuns": 2
   }
 }
