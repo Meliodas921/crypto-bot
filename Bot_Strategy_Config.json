@@ -1,1 +1,82 @@
+{
+  "exchange": {
+    "useFeePct": 0.0026
+  },
 
+  "BTC": {
+    "initialEntryUSD": 20,
+    "stopLossPct": -20,
+    "takeProfitPct": 10,
+    "takeProfitSellFraction": 0.6,
+    "dipBuyPctChange": -1.0,
+    "dipBuyUSD": 20,
+    "dipBuyMinCash": 20,
+    "momentumPctChange": 1.5,
+    "momentumUSD": 20,
+    "momentumMinCash": 20,
+    "reloadMinCash": 20,
+    "reloadMaxAbsPctChange": 0.1,
+    "reloadUSD": 20,
+    "minSellValueUSD": 10
+  },
+
+  "SUI": {
+    "initialEntryUSD": 20,
+    "stopLossPct": -20,
+    "takeProfitPct": 10,
+    "takeProfitSellFraction": 0.6,
+    "dipBuyPctChange": -0.5,
+    "dipBuyUSD": 20,
+    "dipBuyMinCash": 20,
+    "momentumPctChange": 1.0,
+    "momentumUSD": 20,
+    "momentumMinCash": 20,
+    "reloadMinCash": 20,
+    "reloadMaxAbsPctChange": 0.2,
+    "reloadUSD": 20,
+    "minSellValueUSD": 10
+  },
+
+  "SOL": {
+    "initialEntryUSD": 20,
+    "stopLossPct": -20,
+    "takeProfitPct": 10,
+    "takeProfitSellFraction": 0.6,
+    "dipBuyPctChange": -0.7,
+    "dipBuyUSD": 20,
+    "dipBuyMinCash": 20,
+    "momentumPctChange": 1.2,
+    "momentumUSD": 20,
+    "momentumMinCash": 20,
+    "reloadMinCash": 20,
+    "reloadMaxAbsPctChange": 0.2,
+    "reloadUSD": 20,
+    "minSellValueUSD": 10
+  },
+
+  "ZEC": {
+    "initialEntryUSD": 20,
+    "stopLossPct": -20,
+    "takeProfitPct": 10,
+    "takeProfitSellFraction": 0.6,
+    "dipBuyPctChange": -0.7,
+    "dipBuyUSD": 20,
+    "dipBuyMinCash": 20,
+    "momentumPctChange": 1.2,
+    "momentumUSD": 20,
+    "momentumMinCash": 20,
+    "reloadMinCash": 20,
+    "reloadMaxAbsPctChange": 0.2,
+    "reloadUSD": 20,
+    "minSellValueUSD": 10
+  },
+
+  "healthMonitor": {
+    "stopLossAlertAfterNTriggers": 3,
+    "takeProfitNeverFiredAfterNRuns": 20,
+    "momentumWinRateAlertBelowPct": 40,
+    "momentumMinTriggersBeforeAlert": 5,
+    "reloadDailyAlertAboveNTriggers": 6,
+    "consecutiveLossesAlertAfter": 3
+  }
+}
