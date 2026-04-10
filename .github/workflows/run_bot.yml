@@ -1,0 +1,21 @@
+name: Run Crypto Bot
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run bot
+        run: python3 bot_trader.py
+      - name: Save state
+        run: |
+          git config user.email "bot@labworksolutions.com"
+          git config user.name "CryptoBot"
+          git add -A
+          git diff --staged --quiet || git commit -m "Bot update $(date)"
+          git push
