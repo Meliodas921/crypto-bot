@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto AutoTrader — Lab Work Solutions</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #0d1117; color: #e6edf3; min-height: 100vh; }
+header { background: linear-gradient(135deg, #1a1f2e, #0d1117); padding: 18px 28px; border-bottom: 1px solid #30363d; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+header h1 { font-size: 1.3rem; color: #58a6ff; }
+.subtitle { color: #8b949e; font-size: 0.82rem; margin-top: 2px; }
+.paper-badge { background: #2d2214; color: #d29922; border: 1px solid #d29922; padding: 3px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
+#lastUpdate { color: #8b949e; font-size: 0.78rem; margin-top: 4px; }
+.container { max-width: 1300px; margin: 0 auto; padding: 20px; }
+.combined { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 18px 22px; margin-bottom: 20px; }
+.combined-title { font-size: 0.9rem; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+.combined-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.stat { background: #0d1117; border-radius: 8px; padding: 12px; text-align: center; }
+.stat-label { font-size: 0.7rem; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.stat-value { font-size: 1.2rem; font-weight: 700; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+@media(max-width:700px){ .grid { grid-template-columns: 1fr; } .combined-stats { grid-template-columns: repeat(2,1fr); } }
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 18px; }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.card-title { font-size: 1rem; font-weight: 600; }
+.badge { padding: 3px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; }
+.btc { background:#2d1f0e; color:#f7931a; }
+.sui { background:#0e2d1f; color:#3fb950; }
+.sol { background:#1a0e2d; color:#9945ff; }
+.zec { background:#0e2a2d; color:#f4b728; }
+.price-big { font-size: 1.8rem; font-weight: 700; margin-bottom: 4px; }
+.price-change { font-size: 0.82rem; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+.metric { background: #0d1117; border-radius: 6px; padding: 8px; text-align: center; }
+.metric-label { font-size: 0.65rem; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; }
+.metric-value { font-size: 0.95rem; font-weight: 600; margin-top: 2px; }
+.green { color: #3fb950; } .red { color: #f85149; } .yellow { color: #d29922; } .blue { color: #58a6ff; }
+.trades-title { font-size: 0.78rem; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin: 14px 0 8px; }
+.trade-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 5px; margin-bottom: 4px; background: #0d1117; font-size: 0.78rem; }
+.trade-type-buy { color: #3fb950; font-weight: 700; }
+.trade-type-sell { color: #f85149; font-weight: 700; }
+.loading { text-align: center; padding: 60px; color: #8b949e; font-size: 1.1rem; }
+.error-box { background: #2d1216; border: 1px solid #f85149; border-radius: 8px; padding: 16px; color: #f85149; margin-bottom: 20px; }
+.refresh-bar { background: #161b22; border-top: 1px solid #30363d; padding: 8px 20px; text-align: center; font-size: 0.75rem; color: #8b949e; position: fixed; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>⚡ Crypto AutoTrader</h1>
+    <div class="subtitle">Lab Work Solutions — Paper Trading</div>
+    <div id="lastUpdate">Loading...</div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <span class="paper-badge">PAPER TRADING</span>
+  </div>
+</header>
+<div class="container">
+  <div id="content"><div class="loading">⏳ Loading portfolio data...</div></div>
+</div>
+<div class="refresh-bar">Auto-refreshes every 5 minutes • Data from GitHub • <span id="countdown"></span></div>
+<script>
+const OWNER = 'Meliodas921';
+const REPO  = 'crypto-bot';
+const BRANCH = 'main';
+const COINS = ['BTC','SUI','SOL','ZEC'];
+const COLORS = { BTC:'btc', SUI:'sui', SOL:'sol', ZEC:'zec' };
+function raw(file) {
+  return `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${file}?t=${Date.now()}`;
+}
+function fmt(n, d=2) { return n == null ? '—' : Number(n).toFixed(d); }
+function fmtUSD(n) { return n == null ? '—' : '$' + Number(n).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function colorClass(n) { return n > 0 ? 'green' : n < 0 ? 'red' : ''; }
+function timeAgo(ts) {
+  if(!ts) return 'never';
+  const d = new Date(ts), now = new Date();
+  const diff = Math.floor((now - d) / 1000);
+  if(diff < 60) return diff + 's ago';
+  if(diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if(diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  return Math.floor(diff/86400) + 'd ago';
+}
+async function fetchState(coin) {
+  const r = await fetch(raw(`${coin}_Bot_State.json`));
+  if(!r.ok) throw new Error(`${coin} state not found`);
+  return r.json();
+}
+function renderCoinCard(coin, state) {
+  const price = state.lastPrice || 0;
+  const holdings = state.holdings || 0;
+  const cash = state.cash || 0;
+  const avgBuy = state.avgBuyPrice || 0;
+  const pnl = state.realizedPnl || 0;
+  const fees = state.totalFeesPaid || 0;
+  const portVal = cash + holdings * price;
+  const fromAvg = holdings > 0 && avgBuy > 0 ? ((price - avgBuy) / avgBuy * 100) : null;
+  const ph = state.priceHistory || [];
+  const lastPrev = ph.length > 1 ? ph[ph.length - 2] : price;
+  const pctChange = lastPrev > 0 ? ((price - lastPrev) / lastPrev * 100) : 0;
+  const trades = (state.trades || []).slice(0, 5);
+  const cls = COLORS[coin];
+  return `
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">${coin}</span>
+      <span class="badge ${cls}">${cls.toUpperCase()}</span>
+    </div>
+    <div class="price-big" style="color:${cls==='btc'?'#f7931a':cls==='sui'?'#3fb950':cls==='sol'?'#9945ff':'#f4b728'}">
+      ${price > 1000 ? fmtUSD(price) : '$' + fmt(price, 4)}
+    </div>
+    <div class="price-change ${colorClass(pctChange)}">${pctChange >= 0 ? '+' : ''}${fmt(pctChange)}% since last run</div>
+    <div class="metrics">
+      <div class="metric"><div class="metric-label">Cash</div><div class="metric-value blue">${fmtUSD(cash)}</div></div>
+      <div class="metric"><div class="metric-label">Holdings</div><div class="metric-value">${fmt(holdings, 6)}</div></div>
+      <div class="metric"><div class="metric-label">Portfolio</div><div class="metric-value">${fmtUSD(portVal)}</div></div>
+      <div class="metric"><div class="metric-label">Realized P&L</div><div class="metric-value ${colorClass(pnl)}">${fmtUSD(pnl)}</div></div>
+      <div class="metric"><div class="metric-label">Avg Buy</div><div class="metric-value">${avgBuy > 0 ? (avgBuy > 1000 ? fmtUSD(avgBuy) : '$'+fmt(avgBuy,4)) : '—'}</div></div>
+      <div class="metric"><div class="metric-label">From Avg</div><div class="metric-value ${fromAvg != null ? colorClass(fromAvg) : ''}">${fromAvg != null ? (fromAvg>=0?'+':'')+fmt(fromAvg)+'%' : '—'}</div></div>
+      <div class="metric"><div class="metric-label">Fees Paid</div><div class="metric-value red">${fmtUSD(fees)}</div></div>
+      <div class="metric"><div class="metric-label">Wins</div><div class="metric-value green">${state.wins || 0}/${state.totalSellTrades || 0}</div></div>
+      <div class="metric"><div class="metric-label">Updated</div><div class="metric-value">${timeAgo(state.lastUpdated)}</div></div>
+    </div>
+    <div class="trades-title">Recent Trades</div>
+    ${trades.length === 0 ? '<div style="color:#8b949e;font-size:0.78rem;">No trades yet</div>' :
+      trades.map(t => `
+      <div class="trade-row">
+        <span class="${t.type === 'BUY' ? 'trade-type-buy' : 'trade-type-sell'}">${t.type}</span>
+        <span>${t.reason}</span>
+        <span>${fmtUSD(t.total)}</span>
+        <span class="${colorClass(t.pnl)}">${t.pnl != null ? (t.pnl>=0?'+':'')+fmtUSD(t.pnl) : ''}</span>
+        <span style="color:#8b949e">${timeAgo(t.ts)}</span>
+      </div>`).join('')
+    }
+  </div>`;
+}
+async function loadAll() {
+  try {
+    const states = {};
+    for(const coin of COINS) { states[coin] = await fetchState(coin); }
+    let totalPort = 0, totalPnl = 0, totalFees = 0, totalWins = 0, totalSells = 0;
+    for(const coin of COINS) {
+      const s = states[coin];
+      totalPort += (s.cash || 0) + (s.holdings || 0) * (s.lastPrice || 0);
+      totalPnl  += s.realizedPnl || 0;
+      totalFees += s.totalFeesPaid || 0;
+      totalWins += s.wins || 0;
+      totalSells += s.totalSellTrades || 0;
+    }
+    const lastUpdated = COINS.map(c => states[c].lastUpdated).filter(Boolean).sort().pop();
+    document.getElementById('lastUpdate').textContent = 'Last updated: ' + timeAgo(lastUpdated);
+    const winRate = totalSells > 0 ? (totalWins / totalSells * 100) : 0;
+    const html = `
+      <div class="combined">
+        <div class="combined-title">Combined Portfolio</div>
+        <div class="combined-stats">
+          <div class="stat"><div class="stat-label">Total Value</div><div class="stat-value blue">${fmtUSD(totalPort)}</div></div>
+          <div class="stat"><div class="stat-label">Realized P&L</div><div class="stat-value ${colorClass(totalPnl)}">${fmtUSD(totalPnl)}</div></div>
+          <div class="stat"><div class="stat-label">Total Fees</div><div class="stat-value red">${fmtUSD(totalFees)}</div></div>
+          <div class="stat"><div class="stat-label">Win Rate</div><div class="stat-value ${winRate>=50?'green':'red'}">${fmt(winRate)}%</div></div>
+          <div class="stat"><div class="stat-label">Total Trades</div><div class="stat-value">${totalSells}</div></div>
+        </div>
+      </div>
+      <div class="grid">
+        ${COINS.map(coin => renderCoinCard(coin, states[coin])).join('')}
+      </div>`;
+    document.getElementById('content').innerHTML = html;
+  } catch(e) {
+    document.getElementById('content').innerHTML = `
+      <div class="error-box">
+        ⚠️ Could not load data: ${e.message}<br><br>
+        Make sure your GitHub repo is public and the bot has run at least once.
+      </div>`;
+  }
+}
+let secondsLeft = 300;
+function tick() {
+  const m = Math.floor(secondsLeft / 60);
+  const s = secondsLeft % 60;
+  document.getElementById('countdown').textContent = `Next refresh in ${m}:${s.toString().padStart(2,'0')}`;
+  secondsLeft--;
+  if(secondsLeft < 0) { secondsLeft = 300; loadAll(); }
+}
+loadAll();
+setInterval(tick, 1000);
+tick();
+</script>
+</body>
+</html>
