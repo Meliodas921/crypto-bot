@@ -1,16 +1,15 @@
 {
   "coin": "SOL",
-  "cash": 92.198563,
-  "holdings": 0.19060649,
+  "cash": 102.745156,
+  "holdings": 0.0762426,
   "avgBuyPrice": 83.94257859,
-  "realizedPnl": 8.198563281137215,
-  "totalFeesPaid": 0.500341151562824,
-  "wins": 2,
-  "totalSellTrades": 2,
-  "lastPrice": 91.88,
-  "lastUpdated": "2026-05-08T21:16:07.096070+00:00",
+  "realizedPnl": 9.145156137761761,
+  "totalFeesPaid": 0.527833774224848,
+  "wins": 3,
+  "totalSellTrades": 3,
+  "lastPrice": 92.46,
+  "lastUpdated": "2026-05-08T22:29:27.309485+00:00",
   "priceHistory": [
-    83.84,
     83.88,
     83.97,
     83.84,
@@ -89,10 +88,10 @@
     91.66,
     92.39,
     92.34,
-    91.88
+    91.88,
+    92.46
   ],
   "priceTimestamps": [
-    "May 03 07:21",
     "May 03 09:02",
     "May 03 10:16",
     "May 03 11:11",
@@ -171,9 +170,23 @@
     "May 08 17:44",
     "May 08 18:58",
     "May 08 20:11",
-    "May 08 21:16"
+    "May 08 21:16",
+    "May 08 22:29"
   ],
   "trades": [
+    {
+      "ts": "2026-05-08T22:29:27.309485+00:00",
+      "coin": "SOL",
+      "type": "SELL",
+      "coins": 0.11436389,
+      "price": 92.46,
+      "total": 10.5466,
+      "fee": 0.027493,
+      "pnl": 0.946593,
+      "cash": 102.7452,
+      "source": "BOT",
+      "reason": "TAKE PROFIT"
+    },
     {
       "ts": "2026-05-08T20:11:01.535649+00:00",
       "coin": "SOL",
@@ -267,14 +280,14 @@
     }
   ],
   "analytics": {
-    "dayHigh": 92.39,
+    "dayHigh": 92.46,
     "dayLow": 81.47,
     "sessionStart": 83.21,
     "totalBuyVolume": 100.0,
-    "totalSellVolume": 92.19856329567716,
+    "totalSellVolume": 102.74515631225513,
     "largestWin": 5.866301128410541,
     "largestLoss": 0.0,
-    "consecutiveWins": 2,
+    "consecutiveWins": 3,
     "consecutiveLosses": 0,
     "dailySnapshots": [],
     "strategyAlerts": []
@@ -291,10 +304,10 @@
       "totalPnl": 0.0
     },
     "TAKE_PROFIT": {
-      "triggers": 2,
-      "wins": 2,
+      "triggers": 3,
+      "wins": 3,
       "losses": 0,
-      "totalPnl": 8.198563281137215
+      "totalPnl": 9.145156137761761
     },
     "DIP_BUY": {
       "triggers": 1,
@@ -314,6 +327,6 @@
       "triggers": 488
     },
     "runsWithNoTrade": 488,
-    "totalRuns": 495
+    "totalRuns": 496
   }
 }
