@@ -1,16 +1,15 @@
 {
   "coin": "SUI",
-  "cash": 55.954986,
-  "holdings": 54.37336435,
-  "avgBuyPrice": 1.29811795,
+  "cash": 35.954986,
+  "holdings": 69.71797973,
+  "avgBuyPrice": 1.29927804,
   "realizedPnl": 26.5380251675182,
-  "totalFeesPaid": 1.4472177278848697,
+  "totalFeesPaid": 1.4992177278848697,
   "wins": 7,
   "totalSellTrades": 7,
-  "lastPrice": 1.32,
-  "lastUpdated": "2026-05-11T00:08:40.121417+00:00",
+  "lastPrice": 1.3,
+  "lastUpdated": "2026-05-11T04:36:11.920750+00:00",
   "priceHistory": [
-    0.957874,
     0.960953,
     0.970604,
     0.972575,
@@ -89,10 +88,10 @@
     1.34,
     1.35,
     1.33,
-    1.32
+    1.32,
+    1.3
   ],
   "priceTimestamps": [
-    "May 05 17:48",
     "May 05 19:18",
     "May 05 20:38",
     "May 05 21:42",
@@ -171,9 +170,23 @@
     "May 10 21:06",
     "May 10 22:05",
     "May 10 23:08",
-    "May 11 00:08"
+    "May 11 00:08",
+    "May 11 04:36"
   ],
   "trades": [
+    {
+      "ts": "2026-05-11T04:36:11.920750+00:00",
+      "coin": "SUI",
+      "type": "BUY",
+      "coins": 15.34461538,
+      "price": 1.3,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 35.955,
+      "source": "BOT",
+      "reason": "DIP BUY"
+    },
     {
       "ts": "2026-05-11T00:08:40.121417+00:00",
       "coin": "SUI",
@@ -465,7 +478,7 @@
     "dayHigh": 1.38,
     "dayLow": 0.89216,
     "sessionStart": 0.928196,
-    "totalBuyVolume": 300.0,
+    "totalBuyVolume": 320.0,
     "totalSellVolume": 255.95498530475712,
     "largestWin": 6.921339739173163,
     "largestLoss": 0.0,
@@ -492,8 +505,8 @@
       "totalPnl": 26.5380251675182
     },
     "DIP_BUY": {
-      "triggers": 7,
-      "totalUSD": 140.0
+      "triggers": 8,
+      "totalUSD": 160.0
     },
     "MOMENTUM": {
       "triggers": 0,
@@ -509,6 +522,6 @@
       "triggers": 510
     },
     "runsWithNoTrade": 510,
-    "totalRuns": 532
+    "totalRuns": 533
   }
 }
