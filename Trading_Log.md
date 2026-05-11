@@ -2144,3 +2144,7 @@
 **[May 11 2026 14:08]** | SUI $1.2800 → HOLD | Cash: $15.95 | Holdings: 85.302355 | Portfolio: $125.14 | P&L: $26.5380 | Fees: $1.5512
 **[May 11 2026 14:08]** | SOL $95.7200 → HOLD | Cash: $2.75 | Holdings: 1.144021 | Portfolio: $112.25 | P&L: $9.1452 | Fees: $0.7878
 **[May 11 2026 14:08]** | ZEC $566.2700 → HOLD | Cash: $15.14 | Holdings: 0.215254 | Portfolio: $137.04 | P&L: $44.0341 | Fees: $1.9656
+**[May 11 2026 16:46]** | BTC $81567.0000 → HOLD | Cash: $3.39 | Holdings: 0.001238 | Portfolio: $104.39 | P&L: $9.7896 | Fees: $0.7895
+**[May 11 2026 16:46]** | SUI $1.2800 → HOLD | Cash: $15.95 | Holdings: 85.302355 | Portfolio: $125.14 | P&L: $26.5380 | Fees: $1.5512
+**[May 11 2026 16:46]** | SOL $97.3200 → HOLD | Cash: $2.75 | Holdings: 1.144021 | Portfolio: $114.08 | P&L: $9.1452 | Fees: $0.7878
+**[May 11 2026 16:46]** | ZEC $558.8400 → HOLD | Cash: $15.14 | Holdings: 0.215254 | Portfolio: $135.44 | P&L: $44.0341 | Fees: $1.9656
