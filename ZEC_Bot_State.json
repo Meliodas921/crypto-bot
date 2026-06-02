@@ -1,16 +1,15 @@
 {
   "coin": "ZEC",
-  "cash": 9.769218,
-  "holdings": 0.22401642,
+  "cash": 91.875842,
+  "holdings": 0.08960657,
   "avgBuyPrice": 535.67502243,
-  "realizedPnl": 29.76922193349192,
-  "totalFeesPaid": 3.3053971999038136,
-  "wins": 10,
-  "totalSellTrades": 11,
-  "lastPrice": 567.55,
-  "lastUpdated": "2026-06-02T12:40:13.385513+00:00",
+  "realizedPnl": 39.875845693813545,
+  "totalFeesPaid": 3.5194309105892057,
+  "wins": 11,
+  "totalSellTrades": 12,
+  "lastPrice": 612.46,
+  "lastUpdated": "2026-06-02T17:07:17.379257+00:00",
   "priceHistory": [
-    662.49,
     663.64,
     659.46,
     664.25,
@@ -89,10 +88,10 @@
     544.12,
     569.92,
     556.69,
-    567.55
+    567.55,
+    612.46
   ],
   "priceTimestamps": [
-    "May 24 22:58",
     "May 25 00:08",
     "May 25 04:50",
     "May 25 08:55",
@@ -171,9 +170,23 @@
     "Jun 01 23:57",
     "Jun 02 04:25",
     "Jun 02 08:51",
-    "Jun 02 12:40"
+    "Jun 02 12:40",
+    "Jun 02 17:07"
   ],
   "trades": [
+    {
+      "ts": "2026-06-02T17:07:17.379257+00:00",
+      "coin": "ZEC",
+      "type": "SELL",
+      "coins": 0.13440985,
+      "price": 612.46,
+      "total": 82.1066,
+      "fee": 0.214034,
+      "pnl": 10.106624,
+      "cash": 91.8758,
+      "source": "BOT",
+      "reason": "TAKE PROFIT"
+    },
     {
       "ts": "2026-05-29T14:13:47.763300+00:00",
       "coin": "ZEC",
@@ -765,11 +778,11 @@
     "dayLow": 301.85,
     "sessionStart": 369.63,
     "totalBuyVolume": 680.0,
-    "totalSellVolume": 589.7692181477162,
+    "totalSellVolume": 671.8758423929507,
     "largestWin": 12.57279049324616,
     "largestLoss": -30.378137609950144,
-    "consecutiveWins": 0,
-    "consecutiveLosses": 1,
+    "consecutiveWins": 1,
+    "consecutiveLosses": 0,
     "dailySnapshots": [],
     "strategyAlerts": []
   },
@@ -785,10 +798,10 @@
       "totalPnl": -30.378137609950144
     },
     "TAKE_PROFIT": {
-      "triggers": 10,
-      "wins": 10,
+      "triggers": 11,
+      "wins": 11,
       "losses": 0,
-      "totalPnl": 60.147359543442064
+      "totalPnl": 70.25398330376369
     },
     "DIP_BUY": {
       "triggers": 23,
@@ -808,6 +821,6 @@
       "triggers": 730
     },
     "runsWithNoTrade": 730,
-    "totalRuns": 775
+    "totalRuns": 776
   }
 }
