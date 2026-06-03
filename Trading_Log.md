@@ -3120,3 +3120,7 @@
 **[Jun 03 2026 05:25]** | SUI $0.8328 → HOLD | Cash: $22.46 | Holdings: 73.061041 | Portfolio: $83.31 | P&L: $-17.5362 | Fees: $2.4013
 **[Jun 03 2026 05:25]** | SOL $74.5800 → HOLD | Cash: $2.75 | Holdings: 1.144021 | Portfolio: $88.07 | P&L: $9.1452 | Fees: $0.7878
 **[Jun 03 2026 05:25]** | ZEC $615.7400 → HOLD | Cash: $136.29 | Holdings: 0.014337 | Portfolio: $145.12 | P&L: $43.9741 | Fees: $3.6352
+**[Jun 03 2026 10:19]** | BTC $67126.0000 → HOLD | Cash: $3.39 | Holdings: 0.001238 | Portfolio: $86.51 | P&L: $9.7896 | Fees: $0.7895
+**[Jun 03 2026 10:19]** | SUI $0.8334 → RELOAD | Cash: $2.46 | Holdings: 96.998076 | Portfolio: $83.30 | P&L: $-17.5362 | Fees: $2.4533
+**[Jun 03 2026 10:19]** | SOL $75.2000 → HOLD | Cash: $2.75 | Holdings: 1.144021 | Portfolio: $88.78 | P&L: $9.1452 | Fees: $0.7878
+**[Jun 03 2026 10:19]** | ZEC $608.8700 → DIP BUY | Cash: $116.29 | Holdings: 0.047099 | Portfolio: $144.97 | P&L: $43.9741 | Fees: $3.6872
