@@ -1,16 +1,15 @@
 {
   "coin": "BTC",
-  "cash": 3.389821,
-  "holdings": 0.00123823,
-  "avgBuyPrice": 80760.91868799,
-  "realizedPnl": 9.789590424560176,
-  "totalFeesPaid": 0.7895142726328002,
+  "cash": 82.45767,
+  "holdings": 0.0,
+  "avgBuyPrice": 0.0,
+  "realizedPnl": -11.143153161225667,
+  "totalFeesPaid": 0.9956265713888002,
   "wins": 3,
-  "totalSellTrades": 3,
-  "lastPrice": 65554.0,
-  "lastUpdated": "2026-06-03T22:04:44.820545+00:00",
+  "totalSellTrades": 4,
+  "lastPrice": 64022.0,
+  "lastUpdated": "2026-06-04T00:00:04.996866+00:00",
   "priceHistory": [
-    77255.0,
     77069.0,
     77159.0,
     76680.0,
@@ -89,10 +88,10 @@
     67126.0,
     66431.0,
     65959.0,
-    65554.0
+    65554.0,
+    64022.0
   ],
   "priceTimestamps": [
-    "May 25 21:54",
     "May 25 23:00",
     "May 26 00:15",
     "May 26 04:42",
@@ -171,9 +170,23 @@
     "Jun 03 10:19",
     "Jun 03 15:14",
     "Jun 03 19:00",
-    "Jun 03 22:04"
+    "Jun 03 22:04",
+    "Jun 04 00:00"
   ],
   "trades": [
+    {
+      "ts": "2026-06-04T00:00:04.996866+00:00",
+      "coin": "BTC",
+      "type": "SELL",
+      "coins": 0.00123823,
+      "price": 64022.0,
+      "total": 79.0678,
+      "fee": 0.206112,
+      "pnl": -20.932744,
+      "cash": 82.4577,
+      "source": "BOT",
+      "reason": "STOP LOSS"
+    },
     {
       "ts": "2026-05-07T12:06:02.803626+00:00",
       "coin": "BTC",
@@ -346,14 +359,14 @@
   ],
   "analytics": {
     "dayHigh": 82368.0,
-    "dayLow": 65554.0,
+    "dayLow": 64022.0,
     "sessionStart": 71922.0,
     "totalBuyVolume": 200.0,
-    "totalSellVolume": 103.3898213553672,
+    "totalSellVolume": 182.4576701166112,
     "largestWin": 6.448915358196317,
-    "largestLoss": 0.0,
-    "consecutiveWins": 3,
-    "consecutiveLosses": 0,
+    "largestLoss": -20.932743585785843,
+    "consecutiveWins": 0,
+    "consecutiveLosses": 1,
     "dailySnapshots": [],
     "strategyAlerts": []
   },
@@ -363,10 +376,10 @@
       "totalUSD": 40.0
     },
     "STOP_LOSS": {
-      "triggers": 0,
+      "triggers": 1,
       "wins": 0,
-      "losses": 0,
-      "totalPnl": 0.0
+      "losses": 1,
+      "totalPnl": -20.932743585785843
     },
     "TAKE_PROFIT": {
       "triggers": 3,
@@ -392,6 +405,6 @@
       "triggers": 771
     },
     "runsWithNoTrade": 771,
-    "totalRuns": 784
+    "totalRuns": 785
   }
 }
