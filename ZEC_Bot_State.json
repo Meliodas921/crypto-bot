@@ -1,16 +1,15 @@
 {
   "coin": "ZEC",
-  "cash": 56.294125,
-  "holdings": 0.14516855,
-  "avgBuyPrice": 603.98756703,
+  "cash": 36.294125,
+  "holdings": 0.1805857,
+  "avgBuyPrice": 596.28199132,
   "realizedPnl": 43.97412702742872,
-  "totalFeesPaid": 3.8432194970986977,
+  "totalFeesPaid": 3.8952194970986977,
   "wins": 13,
   "totalSellTrades": 14,
-  "lastPrice": 596.31,
-  "lastUpdated": "2026-06-04T04:58:14.616863+00:00",
+  "lastPrice": 563.23,
+  "lastUpdated": "2026-06-04T08:55:34.934065+00:00",
   "priceHistory": [
-    650.01,
     622.12,
     614.91,
     622.89,
@@ -89,10 +88,10 @@
     613.14,
     628.45,
     621.77,
-    596.31
+    596.31,
+    563.23
   ],
   "priceTimestamps": [
-    "May 26 00:15",
     "May 26 04:42",
     "May 26 08:22",
     "May 26 14:20",
@@ -171,9 +170,23 @@
     "Jun 03 19:00",
     "Jun 03 22:04",
     "Jun 04 00:00",
-    "Jun 04 04:58"
+    "Jun 04 04:58",
+    "Jun 04 08:55"
   ],
   "trades": [
+    {
+      "ts": "2026-06-04T08:55:34.934065+00:00",
+      "coin": "ZEC",
+      "type": "BUY",
+      "coins": 0.03541715,
+      "price": 563.23,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 36.2941,
+      "source": "BOT",
+      "reason": "DIP BUY"
+    },
     {
       "ts": "2026-06-04T04:58:14.616863+00:00",
       "coin": "ZEC",
@@ -855,7 +868,7 @@
     "dayHigh": 683.59,
     "dayLow": 301.85,
     "sessionStart": 369.63,
-    "totalBuyVolume": 760.0,
+    "totalBuyVolume": 780.0,
     "totalSellVolume": 716.2941255408613,
     "largestWin": 12.57279049324616,
     "largestLoss": -30.378137609950144,
@@ -882,8 +895,8 @@
       "totalPnl": 74.35226463737887
     },
     "DIP_BUY": {
-      "triggers": 27,
-      "totalUSD": 540.0
+      "triggers": 28,
+      "totalUSD": 560.0
     },
     "MOMENTUM": {
       "triggers": 0,
@@ -899,6 +912,6 @@
       "triggers": 734
     },
     "runsWithNoTrade": 734,
-    "totalRuns": 786
+    "totalRuns": 787
   }
 }
