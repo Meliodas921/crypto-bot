@@ -7,10 +7,9 @@
   "totalFeesPaid": 2.453269070945043,
   "wins": 7,
   "totalSellTrades": 9,
-  "lastPrice": 0.751562,
-  "lastUpdated": "2026-07-15T21:39:38.506782+00:00",
+  "lastPrice": 0.754456,
+  "lastUpdated": "2026-07-15T22:39:46.704246+00:00",
   "priceHistory": [
-    0.73645,
     0.735741,
     0.731204,
     0.735,
@@ -89,10 +88,10 @@
     0.75215,
     0.749146,
     0.75169,
-    0.751562
+    0.751562,
+    0.754456
   ],
   "priceTimestamps": [
-    "Jul 10 15:19",
     "Jul 10 17:17",
     "Jul 10 18:59",
     "Jul 10 20:38",
@@ -171,7 +170,8 @@
     "Jul 15 18:06",
     "Jul 15 19:35",
     "Jul 15 20:41",
-    "Jul 15 21:39"
+    "Jul 15 21:39",
+    "Jul 15 22:39"
   ],
   "trades": [
     {
@@ -675,9 +675,9 @@
       "totalUSD": 220.0
     },
     "HOLD": {
-      "triggers": 1191
+      "triggers": 1192
     },
-    "runsWithNoTrade": 1191,
-    "totalRuns": 1226
+    "runsWithNoTrade": 1192,
+    "totalRuns": 1227
   }
 }
