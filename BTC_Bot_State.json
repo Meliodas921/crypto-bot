@@ -1,16 +1,15 @@
 {
   "coin": "BTC",
-  "cash": 66.068091,
-  "holdings": 0.00042537,
-  "avgBuyPrice": 74400.52897752,
+  "cash": 46.068091,
+  "holdings": 0.00068502,
+  "avgBuyPrice": 75395.7932827,
   "realizedPnl": 4.114862615494955,
-  "totalFeesPaid": 1.7859870012244004,
+  "totalFeesPaid": 1.8379870012244004,
   "wins": 7,
   "totalSellTrades": 8,
-  "lastPrice": 76892.0,
-  "lastUpdated": "2026-08-21T13:32:11.933590+00:00",
+  "lastPrice": 76826.0,
+  "lastUpdated": "2026-08-21T14:18:29.270399+00:00",
   "priceHistory": [
-    64325.0,
     64221.0,
     64387.0,
     64319.0,
@@ -89,10 +88,10 @@
     77486.0,
     76673.0,
     77251.0,
-    76892.0
+    76892.0,
+    76826.0
   ],
   "priceTimestamps": [
-    "Aug 19 07:36",
     "Aug 19 08:15",
     "Aug 19 09:03",
     "Aug 19 09:48",
@@ -171,9 +170,23 @@
     "Aug 21 11:23",
     "Aug 21 11:51",
     "Aug 21 12:42",
-    "Aug 21 13:32"
+    "Aug 21 13:32",
+    "Aug 21 14:18"
   ],
   "trades": [
+    {
+      "ts": "2026-08-21T14:18:29.270399+00:00",
+      "coin": "BTC",
+      "type": "BUY",
+      "coins": 0.00025965,
+      "price": 76826.0,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 46.0681,
+      "source": "BOT",
+      "reason": "RELOAD"
+    },
     {
       "ts": "2026-08-21T11:51:55.418313+00:00",
       "coin": "BTC",
@@ -517,7 +530,7 @@
     "dayHigh": 82368.0,
     "dayLow": 58231.0,
     "sessionStart": 71922.0,
-    "totalBuyVolume": 360.0,
+    "totalBuyVolume": 380.0,
     "totalSellVolume": 326.0680903927756,
     "largestWin": 6.448915358196317,
     "largestLoss": -20.932743585785843,
@@ -554,13 +567,13 @@
       "totalPnl": 0.0
     },
     "RELOAD": {
-      "triggers": 11,
-      "totalUSD": 220.0
+      "triggers": 12,
+      "totalUSD": 240.0
     },
     "HOLD": {
       "triggers": 1933
     },
     "runsWithNoTrade": 1933,
-    "totalRuns": 1959
+    "totalRuns": 1960
   }
 }
