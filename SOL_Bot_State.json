@@ -1,16 +1,15 @@
 {
   "coin": "SOL",
-  "cash": 9.926261,
-  "holdings": 1.10474351,
+  "cash": 72.408968,
+  "holdings": 0.4418974,
   "avgBuyPrice": 85.85522314,
-  "realizedPnl": 4.774260652974009,
-  "totalFeesPaid": 2.056179947717741,
-  "wins": 7,
-  "totalSellTrades": 8,
-  "lastPrice": 94.15,
-  "lastUpdated": "2026-08-22T01:07:25.055213+00:00",
+  "realizedPnl": 10.348167270680955,
+  "totalFeesPaid": 2.219058469960697,
+  "wins": 8,
+  "totalSellTrades": 9,
+  "lastPrice": 94.51,
+  "lastUpdated": "2026-08-22T02:20:18.492245+00:00",
   "priceHistory": [
-    82.24,
     82.3,
     82.55,
     83.82,
@@ -89,10 +88,10 @@
     94.0,
     94.39,
     93.82,
-    94.15
+    94.15,
+    94.51
   ],
   "priceTimestamps": [
-    "Aug 19 19:38",
     "Aug 19 19:58",
     "Aug 19 20:36",
     "Aug 19 21:02",
@@ -171,9 +170,23 @@
     "Aug 21 22:50",
     "Aug 21 23:21",
     "Aug 21 23:48",
-    "Aug 22 01:07"
+    "Aug 22 01:07",
+    "Aug 22 02:20"
   ],
   "trades": [
+    {
+      "ts": "2026-08-22T02:20:18.492245+00:00",
+      "coin": "SOL",
+      "type": "SELL",
+      "coins": 0.66284611,
+      "price": 94.51,
+      "total": 62.4827,
+      "fee": 0.162879,
+      "pnl": 5.573907,
+      "cash": 72.409,
+      "source": "BOT",
+      "reason": "TAKE PROFIT"
+    },
     {
       "ts": "2026-08-20T14:19:59.583835+00:00",
       "coin": "SOL",
@@ -570,10 +583,10 @@
     "dayLow": 61.44,
     "sessionStart": 83.21,
     "totalBuyVolume": 440.0,
-    "totalSellVolume": 349.92626148218227,
+    "totalSellVolume": 412.4089684379993,
     "largestWin": 7.157207895996208,
     "largestLoss": -22.06522680360702,
-    "consecutiveWins": 4,
+    "consecutiveWins": 5,
     "consecutiveLosses": 0,
     "dailySnapshots": [],
     "strategyAlerts": []
@@ -590,10 +603,10 @@
       "totalPnl": -22.06522680360702
     },
     "TAKE_PROFIT": {
-      "triggers": 7,
-      "wins": 7,
+      "triggers": 8,
+      "wins": 8,
       "losses": 0,
-      "totalPnl": 26.839487456581026
+      "totalPnl": 32.41339407428797
     },
     "DIP_BUY": {
       "triggers": 6,
@@ -613,6 +626,6 @@
       "triggers": 1948
     },
     "runsWithNoTrade": 1948,
-    "totalRuns": 1978
+    "totalRuns": 1979
   }
 }
