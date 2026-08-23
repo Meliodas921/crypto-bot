@@ -1,16 +1,15 @@
 {
   "coin": "ZEC",
-  "cash": 120.238851,
-  "holdings": 0.10909518,
-  "avgBuyPrice": 832.22466158,
+  "cash": 100.238851,
+  "holdings": 0.1322609,
+  "avgBuyPrice": 837.67538787,
   "realizedPnl": 111.03057211670202,
-  "totalFeesPaid": 11.715940053806015,
+  "totalFeesPaid": 11.767940053806015,
   "wins": 39,
   "totalSellTrades": 43,
-  "lastPrice": 862.59,
-  "lastUpdated": "2026-08-23T21:44:49.784588+00:00",
+  "lastPrice": 861.1,
+  "lastUpdated": "2026-08-23T21:59:38.885860+00:00",
   "priceHistory": [
-    726.91,
     734.46,
     814.25,
     819.91,
@@ -89,10 +88,10 @@
     844.69,
     851.25,
     868.64,
-    862.59
+    862.59,
+    861.1
   ],
   "priceTimestamps": [
-    "Aug 21 23:48",
     "Aug 22 01:07",
     "Aug 22 02:20",
     "Aug 22 03:20",
@@ -171,9 +170,23 @@
     "Aug 23 20:21",
     "Aug 23 20:48",
     "Aug 23 21:19",
-    "Aug 23 21:44"
+    "Aug 23 21:44",
+    "Aug 23 21:59"
   ],
   "trades": [
+    {
+      "ts": "2026-08-23T21:59:38.885860+00:00",
+      "coin": "ZEC",
+      "type": "BUY",
+      "coins": 0.02316572,
+      "price": 861.1,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 100.2389,
+      "source": "BOT",
+      "reason": "RELOAD"
+    },
     {
       "ts": "2026-08-23T20:21:40.721463+00:00",
       "coin": "ZEC",
@@ -1460,26 +1473,13 @@
       "cash": 78.0412,
       "source": "BOT",
       "reason": "DIP BUY"
-    },
-    {
-      "ts": "2026-06-05T00:20:23.545630+00:00",
-      "coin": "ZEC",
-      "type": "BUY",
-      "coins": 0.04426593,
-      "price": 450.64,
-      "total": 20,
-      "fee": 0.052,
-      "pnl": null,
-      "cash": 98.0412,
-      "source": "BOT",
-      "reason": "INITIAL ENTRY"
     }
   ],
   "analytics": {
     "dayHigh": 874.19,
     "dayLow": 301.85,
     "sessionStart": 369.63,
-    "totalBuyVolume": 2240.0,
+    "totalBuyVolume": 2260.0,
     "totalSellVolume": 2260.2388498715936,
     "largestWin": 12.57279049324616,
     "largestLoss": -32.28381391317055,
@@ -1517,13 +1517,13 @@
       "totalUSD": 40.0
     },
     "RELOAD": {
-      "triggers": 26,
-      "totalUSD": 520.0
+      "triggers": 27,
+      "totalUSD": 540.0
     },
     "HOLD": {
       "triggers": 1901
     },
     "runsWithNoTrade": 1901,
-    "totalRuns": 2056
+    "totalRuns": 2057
   }
 }
