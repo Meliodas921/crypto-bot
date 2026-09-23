@@ -1,16 +1,15 @@
 {
   "coin": "SOL",
-  "cash": 35.034102,
-  "holdings": 0.9256155,
-  "avgBuyPrice": 116.80278004,
+  "cash": 15.034102,
+  "holdings": 1.09850508,
+  "avgBuyPrice": 116.6261911,
   "realizedPnl": 43.148566056521105,
-  "totalFeesPaid": 3.787799343904474,
+  "totalFeesPaid": 3.839799343904474,
   "wins": 16,
   "totalSellTrades": 17,
-  "lastPrice": 117.37,
-  "lastUpdated": "2026-09-23T10:14:13.034856+00:00",
+  "lastPrice": 115.38,
+  "lastUpdated": "2026-09-23T15:03:57.989776+00:00",
   "priceHistory": [
-    98.9,
     103.26,
     101.34,
     102.88,
@@ -89,10 +88,10 @@
     117.71,
     118.9,
     118.99,
-    117.37
+    117.37,
+    115.38
   ],
   "priceTimestamps": [
-    "Sep 11 11:06",
     "Sep 11 15:00",
     "Sep 11 18:32",
     "Sep 11 21:19",
@@ -171,9 +170,23 @@
     "Sep 22 22:15",
     "Sep 23 00:49",
     "Sep 23 05:29",
-    "Sep 23 10:14"
+    "Sep 23 10:14",
+    "Sep 23 15:03"
   ],
   "trades": [
+    {
+      "ts": "2026-09-23T15:03:57.989776+00:00",
+      "coin": "SOL",
+      "type": "BUY",
+      "coins": 0.17288958,
+      "price": 115.38,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 15.0341,
+      "source": "BOT",
+      "reason": "DIP BUY"
+    },
     {
       "ts": "2026-09-23T10:14:13.034856+00:00",
       "coin": "SOL",
@@ -894,7 +907,7 @@
     "dayHigh": 119.43,
     "dayLow": 61.44,
     "sessionStart": 83.21,
-    "totalBuyVolume": 760.0,
+    "totalBuyVolume": 780.0,
     "totalSellVolume": 695.0341021578154,
     "largestWin": 9.62165851773544,
     "largestLoss": -22.06522680360702,
@@ -921,8 +934,8 @@
       "totalPnl": 65.21379286012814
     },
     "DIP_BUY": {
-      "triggers": 15,
-      "totalUSD": 300.0
+      "triggers": 16,
+      "totalUSD": 320.0
     },
     "MOMENTUM": {
       "triggers": 0,
@@ -938,6 +951,6 @@
       "triggers": 2266
     },
     "runsWithNoTrade": 2266,
-    "totalRuns": 2321
+    "totalRuns": 2322
   }
 }
