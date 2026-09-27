@@ -1,16 +1,15 @@
 {
   "coin": "ZEC",
-  "cash": 205.126659,
-  "holdings": 0.07833487,
+  "cash": 282.190117,
+  "holdings": 0.03133395,
   "avgBuyPrice": 1483.49287358,
-  "realizedPnl": 221.33590629121235,
-  "totalFeesPaid": 16.415052447447273,
-  "wins": 53,
-  "totalSellTrades": 57,
-  "lastPrice": 1682.35,
-  "lastUpdated": "2026-09-26T21:57:10.900329+00:00",
+  "realizedPnl": 228.6738318203698,
+  "totalFeesPaid": 16.61593974618038,
+  "wins": 54,
+  "totalSellTrades": 58,
+  "lastPrice": 1643.89,
+  "lastUpdated": "2026-09-27T00:21:40.534222+00:00",
   "priceHistory": [
-    1114.15,
     1137.11,
     1136.83,
     1217.99,
@@ -89,10 +88,10 @@
     1541.99,
     1549.42,
     1560.88,
-    1682.35
+    1682.35,
+    1643.89
   ],
   "priceTimestamps": [
-    "Sep 14 05:29",
     "Sep 14 10:55",
     "Sep 14 16:47",
     "Sep 14 20:44",
@@ -171,9 +170,23 @@
     "Sep 26 11:48",
     "Sep 26 15:49",
     "Sep 26 19:00",
-    "Sep 26 21:57"
+    "Sep 26 21:57",
+    "Sep 27 00:21"
   ],
   "trades": [
+    {
+      "ts": "2026-09-27T00:21:40.534222+00:00",
+      "coin": "ZEC",
+      "type": "SELL",
+      "coins": 0.04700092,
+      "price": 1643.89,
+      "total": 77.0635,
+      "fee": 0.200887,
+      "pnl": 7.337926,
+      "cash": 282.1901,
+      "source": "BOT",
+      "reason": "TAKE PROFIT"
+    },
     {
       "ts": "2026-09-26T21:57:10.900329+00:00",
       "coin": "ZEC",
@@ -1460,19 +1473,6 @@
       "cash": 51.5125,
       "source": "BOT",
       "reason": "DIP BUY"
-    },
-    {
-      "ts": "2026-07-07T19:07:20.147593+00:00",
-      "coin": "ZEC",
-      "type": "BUY",
-      "coins": 0.04045919,
-      "price": 493.04,
-      "total": 20,
-      "fee": 0.052,
-      "pnl": null,
-      "cash": 71.5125,
-      "source": "BOT",
-      "reason": "DIP BUY"
     }
   ],
   "analytics": {
@@ -1480,10 +1480,10 @@
     "dayLow": 301.85,
     "sessionStart": 369.63,
     "totalBuyVolume": 3100.0,
-    "totalSellVolume": 3205.1266581092123,
+    "totalSellVolume": 3282.1901164770593,
     "largestWin": 22.852202129253754,
     "largestLoss": -32.28381391317055,
-    "consecutiveWins": 31,
+    "consecutiveWins": 32,
     "consecutiveLosses": 0,
     "dailySnapshots": [],
     "strategyAlerts": []
@@ -1500,10 +1500,10 @@
       "totalPnl": -98.56452998826137
     },
     "TAKE_PROFIT": {
-      "triggers": 53,
-      "wins": 53,
+      "triggers": 54,
+      "wins": 54,
       "losses": 0,
-      "totalPnl": 319.90043627947387
+      "totalPnl": 327.23836180863134
     },
     "DIP_BUY": {
       "triggers": 110,
@@ -1524,6 +1524,6 @@
       "triggers": 2130
     },
     "runsWithNoTrade": 2130,
-    "totalRuns": 2342
+    "totalRuns": 2343
   }
 }
