@@ -1,16 +1,15 @@
 {
   "coin": "ZEC",
-  "cash": 205.587401,
-  "holdings": 0.08234944,
-  "avgBuyPrice": 1547.51988699,
+  "cash": 185.587401,
+  "holdings": 0.09637244,
+  "avgBuyPrice": 1529.8709246,
   "realizedPnl": 233.02481457566253,
-  "totalFeesPaid": 17.041066814013533,
+  "totalFeesPaid": 17.093066814013532,
   "wins": 56,
   "totalSellTrades": 60,
-  "lastPrice": 1459.39,
-  "lastUpdated": "2026-09-29T00:58:55.614467+00:00",
+  "lastPrice": 1422.52,
+  "lastUpdated": "2026-09-30T01:50:08.046640+00:00",
   "priceHistory": [
-    1123.77,
     1168.61,
     1231.26,
     1253.77,
@@ -89,10 +88,10 @@
     1545.93,
     1531.69,
     1462.65,
-    1459.39
+    1459.39,
+    1422.52
   ],
   "priceTimestamps": [
-    "Sep 16 01:24",
     "Sep 16 06:25",
     "Sep 16 11:55",
     "Sep 16 16:13",
@@ -171,9 +170,23 @@
     "Sep 28 06:53",
     "Sep 28 14:57",
     "Sep 28 21:08",
-    "Sep 29 00:58"
+    "Sep 29 00:58",
+    "Sep 30 01:50"
   ],
   "trades": [
+    {
+      "ts": "2026-09-30T01:50:08.046640+00:00",
+      "coin": "ZEC",
+      "type": "BUY",
+      "coins": 0.014023,
+      "price": 1422.52,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 185.5874,
+      "source": "BOT",
+      "reason": "DIP BUY"
+    },
     {
       "ts": "2026-09-28T21:08:16.045412+00:00",
       "coin": "ZEC",
@@ -1460,26 +1473,13 @@
       "cash": 141.6137,
       "source": "BOT",
       "reason": "TAKE PROFIT"
-    },
-    {
-      "ts": "2026-07-14T23:24:02.889555+00:00",
-      "coin": "ZEC",
-      "type": "SELL",
-      "coins": 0.15904425,
-      "price": 554.35,
-      "total": 87.9369,
-      "fee": 0.229232,
-      "pnl": 8.479671,
-      "cash": 106.0753,
-      "source": "BOT",
-      "reason": "TAKE PROFIT"
     }
   ],
   "analytics": {
     "dayHigh": 1682.35,
     "dayLow": 301.85,
     "sessionStart": 369.63,
-    "totalBuyVolume": 3220.0,
+    "totalBuyVolume": 3240.0,
     "totalSellVolume": 3325.587400114286,
     "largestWin": 22.852202129253754,
     "largestLoss": -32.28381391317055,
@@ -1506,8 +1506,8 @@
       "totalPnl": 331.5893445639241
     },
     "DIP_BUY": {
-      "triggers": 116,
-      "totalUSD": 2320.0
+      "triggers": 117,
+      "totalUSD": 2340.0
     },
     "MOMENTUM": {
       "triggers": 5,
@@ -1524,6 +1524,6 @@
       "triggers": 2132
     },
     "runsWithNoTrade": 2132,
-    "totalRuns": 2353
+    "totalRuns": 2354
   }
 }
