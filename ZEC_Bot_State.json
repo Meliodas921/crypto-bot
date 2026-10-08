@@ -1,16 +1,15 @@
 {
   "coin": "ZEC",
-  "cash": 266.690571,
-  "holdings": 0.0,
-  "avgBuyPrice": 0.0,
+  "cash": 246.690571,
+  "holdings": 0.01693235,
+  "avgBuyPrice": 1181.17104472,
   "realizedPnl": 166.69059281501424,
-  "totalFeesPaid": 18.24170471502933,
+  "totalFeesPaid": 18.293704715029328,
   "wins": 56,
   "totalSellTrades": 61,
-  "lastPrice": 1147.65,
-  "lastUpdated": "2026-10-08T15:29:55.020540+00:00",
+  "lastPrice": 1178.1,
+  "lastUpdated": "2026-10-08T20:47:04.320113+00:00",
   "priceHistory": [
-    1519.42,
     1543.84,
     1522.79,
     1520.25,
@@ -89,10 +88,10 @@
     1310.25,
     1325.87,
     1241.21,
-    1147.65
+    1147.65,
+    1178.1
   ],
   "priceTimestamps": [
-    "Sep 22 11:42",
     "Sep 22 15:43",
     "Sep 22 19:14",
     "Sep 22 22:15",
@@ -171,9 +170,23 @@
     "Oct 07 21:46",
     "Oct 08 01:33",
     "Oct 08 07:59",
-    "Oct 08 15:29"
+    "Oct 08 15:29",
+    "Oct 08 20:47"
   ],
   "trades": [
+    {
+      "ts": "2026-10-08T20:47:04.320113+00:00",
+      "coin": "ZEC",
+      "type": "BUY",
+      "coins": 0.01693235,
+      "price": 1178.1,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 246.6906,
+      "source": "BOT",
+      "reason": "INITIAL ENTRY"
+    },
     {
       "ts": "2026-10-08T15:29:55.020540+00:00",
       "coin": "ZEC",
@@ -1460,26 +1473,13 @@
       "cash": 173.437,
       "source": "BOT",
       "reason": "TAKE PROFIT"
-    },
-    {
-      "ts": "2026-08-21T08:57:15.049631+00:00",
-      "coin": "ZEC",
-      "type": "SELL",
-      "coins": 0.06348631,
-      "price": 637.57,
-      "total": 40.3717,
-      "fee": 0.10524,
-      "pnl": 4.737617,
-      "cash": 156.8509,
-      "source": "BOT",
-      "reason": "TAKE PROFIT"
     }
   ],
   "analytics": {
     "dayHigh": 1682.35,
     "dayLow": 301.85,
     "sessionStart": 369.63,
-    "totalBuyVolume": 3420.0,
+    "totalBuyVolume": 3440.0,
     "totalSellVolume": 3586.6905702962704,
     "largestWin": 22.852202129253754,
     "largestLoss": -66.33422176064829,
@@ -1490,8 +1490,8 @@
   },
   "ruleStats": {
     "INITIAL_ENTRY": {
-      "triggers": 5,
-      "totalUSD": 100.0
+      "triggers": 6,
+      "totalUSD": 120.0
     },
     "STOP_LOSS": {
       "triggers": 5,
@@ -1524,6 +1524,6 @@
       "triggers": 2162
     },
     "runsWithNoTrade": 2162,
-    "totalRuns": 2394
+    "totalRuns": 2395
   }
 }
