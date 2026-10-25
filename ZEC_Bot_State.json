@@ -1,16 +1,15 @@
 {
   "coin": "ZEC",
-  "cash": 52.675794,
-  "holdings": 0.20405605,
-  "avgBuyPrice": 1208.765787,
+  "cash": 32.675794,
+  "holdings": 0.22056888,
+  "avgBuyPrice": 1208.9464565,
   "realizedPnl": 199.33181068639027,
-  "totalFeesPaid": 20.287204595874623,
+  "totalFeesPaid": 20.339204595874623,
   "wins": 60,
   "totalSellTrades": 65,
-  "lastPrice": 1179.66,
-  "lastUpdated": "2026-10-25T09:18:14.647106+00:00",
+  "lastPrice": 1208.03,
+  "lastUpdated": "2026-10-25T13:49:39.296170+00:00",
   "priceHistory": [
-    1256.29,
     1274.31,
     1309.63,
     1236.55,
@@ -89,10 +88,10 @@
     1193.79,
     1208.66,
     1214.86,
-    1179.66
+    1179.66,
+    1208.03
   ],
   "priceTimestamps": [
-    "Oct 11 22:54",
     "Oct 12 02:03",
     "Oct 12 09:11",
     "Oct 12 19:03",
@@ -171,9 +170,23 @@
     "Oct 24 21:54",
     "Oct 24 23:59",
     "Oct 25 04:27",
-    "Oct 25 09:18"
+    "Oct 25 09:18",
+    "Oct 25 13:49"
   ],
   "trades": [
+    {
+      "ts": "2026-10-25T13:49:39.296170+00:00",
+      "coin": "ZEC",
+      "type": "BUY",
+      "coins": 0.01651283,
+      "price": 1208.03,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 32.6758,
+      "source": "BOT",
+      "reason": "MOMENTUM"
+    },
     {
       "ts": "2026-10-25T09:18:14.647106+00:00",
       "coin": "ZEC",
@@ -1460,26 +1473,13 @@
       "cash": 200.2085,
       "source": "BOT",
       "reason": "TAKE PROFIT"
-    },
-    {
-      "ts": "2026-09-03T17:51:42.557616+00:00",
-      "coin": "ZEC",
-      "type": "SELL",
-      "coins": 0.15002496,
-      "price": 949.84,
-      "total": 142.1292,
-      "fee": 0.370499,
-      "pnl": 15.654191,
-      "cash": 142.3681,
-      "source": "BOT",
-      "reason": "TAKE PROFIT"
     }
   ],
   "analytics": {
     "dayHigh": 1682.35,
     "dayLow": 301.85,
     "sessionStart": 369.63,
-    "totalBuyVolume": 3920.0,
+    "totalBuyVolume": 3940.0,
     "totalSellVolume": 3872.675793817465,
     "largestWin": 22.852202129253754,
     "largestLoss": -66.33422176064829,
@@ -1510,11 +1510,11 @@
       "totalUSD": 2800.0
     },
     "MOMENTUM": {
-      "triggers": 12,
+      "triggers": 13,
       "wins": 0,
       "losses": 0,
       "totalPnl": 0.0,
-      "totalUSD": 240.0
+      "totalUSD": 260.0
     },
     "RELOAD": {
       "triggers": 38,
@@ -1524,6 +1524,6 @@
       "triggers": 2228
     },
     "runsWithNoTrade": 2228,
-    "totalRuns": 2489
+    "totalRuns": 2490
   }
 }
