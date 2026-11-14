@@ -1,16 +1,15 @@
 {
   "coin": "SUI",
-  "cash": 67.835246,
-  "holdings": 0.0,
-  "avgBuyPrice": 0.0,
+  "cash": 47.835246,
+  "holdings": 28.46619604,
+  "avgBuyPrice": 0.70258773,
   "realizedPnl": -32.16475307995762,
-  "totalFeesPaid": 5.435337917712784,
+  "totalFeesPaid": 5.487337917712783,
   "wins": 20,
   "totalSellTrades": 25,
-  "lastPrice": 0.725529,
-  "lastUpdated": "2026-11-14T16:53:28.536183+00:00",
+  "lastPrice": 0.700761,
+  "lastUpdated": "2026-11-14T21:06:11.371379+00:00",
   "priceHistory": [
-    0.916242,
     0.912332,
     0.917605,
     0.908887,
@@ -89,10 +88,10 @@
     0.791379,
     0.774255,
     0.769681,
-    0.725529
+    0.725529,
+    0.700761
   ],
   "priceTimestamps": [
-    "Oct 26 17:31",
     "Oct 26 21:52",
     "Oct 27 01:08",
     "Oct 27 06:16",
@@ -171,9 +170,23 @@
     "Nov 13 23:32",
     "Nov 14 03:34",
     "Nov 14 10:56",
-    "Nov 14 16:53"
+    "Nov 14 16:53",
+    "Nov 14 21:06"
   ],
   "trades": [
+    {
+      "ts": "2026-11-14T21:06:11.371379+00:00",
+      "coin": "SUI",
+      "type": "BUY",
+      "coins": 28.46619604,
+      "price": 0.700761,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 47.8352,
+      "source": "BOT",
+      "reason": "INITIAL ENTRY"
+    },
     {
       "ts": "2026-11-14T16:53:28.536183+00:00",
       "coin": "SUI",
@@ -1193,7 +1206,7 @@
     "dayHigh": 1.38,
     "dayLow": 0.643413,
     "sessionStart": 0.928196,
-    "totalBuyVolume": 1060.0,
+    "totalBuyVolume": 1080.0,
     "totalSellVolume": 1027.8352458179747,
     "largestWin": 7.323973522530473,
     "largestLoss": -22.439570899437115,
@@ -1204,8 +1217,8 @@
   },
   "ruleStats": {
     "INITIAL_ENTRY": {
-      "triggers": 5,
-      "totalUSD": 100.0
+      "triggers": 6,
+      "totalUSD": 120.0
     },
     "STOP_LOSS": {
       "triggers": 5,
@@ -1237,6 +1250,6 @@
       "triggers": 2498
     },
     "runsWithNoTrade": 2498,
-    "totalRuns": 2576
+    "totalRuns": 2577
   }
 }
