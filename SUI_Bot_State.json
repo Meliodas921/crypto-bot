@@ -1,16 +1,15 @@
 {
   "coin": "SUI",
-  "cash": 5.403562,
-  "holdings": 86.27419419,
-  "avgBuyPrice": 0.92727612,
-  "realizedPnl": -14.596437354229543,
-  "totalFeesPaid": 5.2725924001379445,
+  "cash": 67.835246,
+  "holdings": 0.0,
+  "avgBuyPrice": 0.0,
+  "realizedPnl": -32.16475307995762,
+  "totalFeesPaid": 5.435337917712784,
   "wins": 20,
-  "totalSellTrades": 24,
-  "lastPrice": 0.769681,
-  "lastUpdated": "2026-11-14T10:56:57.309745+00:00",
+  "totalSellTrades": 25,
+  "lastPrice": 0.725529,
+  "lastUpdated": "2026-11-14T16:53:28.536183+00:00",
   "priceHistory": [
-    0.912303,
     0.916242,
     0.912332,
     0.917605,
@@ -89,10 +88,10 @@
     0.80346,
     0.791379,
     0.774255,
-    0.769681
+    0.769681,
+    0.725529
   ],
   "priceTimestamps": [
-    "Oct 26 11:22",
     "Oct 26 17:31",
     "Oct 26 21:52",
     "Oct 27 01:08",
@@ -171,9 +170,23 @@
     "Nov 13 18:04",
     "Nov 13 23:32",
     "Nov 14 03:34",
-    "Nov 14 10:56"
+    "Nov 14 10:56",
+    "Nov 14 16:53"
   ],
   "trades": [
+    {
+      "ts": "2026-11-14T16:53:28.536183+00:00",
+      "coin": "SUI",
+      "type": "SELL",
+      "coins": 86.27419419,
+      "price": 0.725529,
+      "total": 62.4317,
+      "fee": 0.162746,
+      "pnl": -17.568316,
+      "cash": 67.8352,
+      "source": "BOT",
+      "reason": "STOP LOSS"
+    },
     {
       "ts": "2026-10-25T19:51:25.923662+00:00",
       "coin": "SUI",
@@ -1181,11 +1194,11 @@
     "dayLow": 0.643413,
     "sessionStart": 0.928196,
     "totalBuyVolume": 1060.0,
-    "totalSellVolume": 965.4035614990731,
+    "totalSellVolume": 1027.8352458179747,
     "largestWin": 7.323973522530473,
     "largestLoss": -22.439570899437115,
     "consecutiveWins": 0,
-    "consecutiveLosses": 1,
+    "consecutiveLosses": 2,
     "dailySnapshots": [],
     "strategyAlerts": []
   },
@@ -1195,10 +1208,10 @@
       "totalUSD": 100.0
     },
     "STOP_LOSS": {
-      "triggers": 4,
+      "triggers": 5,
       "wins": 0,
-      "losses": 4,
-      "totalPnl": -82.97676981485685
+      "losses": 5,
+      "totalPnl": -100.54508554058492
     },
     "TAKE_PROFIT": {
       "triggers": 20,
@@ -1224,6 +1237,6 @@
       "triggers": 2498
     },
     "runsWithNoTrade": 2498,
-    "totalRuns": 2575
+    "totalRuns": 2576
   }
 }
