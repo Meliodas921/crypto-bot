@@ -10308,3 +10308,7 @@
 **[Nov 14 2026 21:06]** | SUI $0.7008 → INITIAL ENTRY | Cash: $47.84 | Holdings: 28.466196 | Portfolio: $67.78 | P&L: $-32.1648 | Fees: $5.4873
 **[Nov 14 2026 21:06]** | SOL $70.6800 → INITIAL ENTRY | Cash: $72.50 | Holdings: 0.282230 | Portfolio: $92.45 | P&L: $-7.5023 | Fees: $4.6144
 **[Nov 14 2026 21:06]** | ZEC $829.9900 → DIP BUY | Cash: $56.57 | Holdings: 0.215645 | Portfolio: $235.56 | P&L: $156.5721 | Fees: $22.5883
+**[Nov 15 2026 01:01]** | BTC $63431.0000 → DIP BUY | Cash: $46.26 | Holdings: 0.000623 | Portfolio: $85.76 | P&L: $-7.3442 | Fees: $2.6716
+**[Nov 15 2026 01:01]** | SUI $0.6939 → DIP BUY | Cash: $27.84 | Holdings: 57.212487 | Portfolio: $67.54 | P&L: $-32.1648 | Fees: $5.5393
+**[Nov 15 2026 01:01]** | SOL $69.4100 → DIP BUY | Cash: $52.50 | Holdings: 0.569624 | Portfolio: $92.04 | P&L: $-7.5023 | Fees: $4.6664
+**[Nov 15 2026 01:01]** | ZEC $858.8700 → MOMENTUM | Cash: $36.57 | Holdings: 0.238871 | Portfolio: $241.73 | P&L: $156.5721 | Fees: $22.6403
