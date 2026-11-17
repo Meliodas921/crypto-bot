@@ -1,16 +1,15 @@
 {
   "coin": "BTC",
-  "cash": 26.256824,
-  "holdings": 0.00093182,
-  "avgBuyPrice": 64389.39918869,
+  "cash": 6.256824,
+  "holdings": 0.00124508,
+  "avgBuyPrice": 64252.4289558,
   "realizedPnl": -7.344176941352311,
-  "totalFeesPaid": 2.723563405326401,
+  "totalFeesPaid": 2.775563405326401,
   "wins": 9,
   "totalSellTrades": 11,
-  "lastPrice": 64556.0,
-  "lastUpdated": "2026-11-17T08:17:27.083063+00:00",
+  "lastPrice": 63679.0,
+  "lastUpdated": "2026-11-17T17:45:15.406105+00:00",
   "priceHistory": [
-    81245.0,
     81279.0,
     79848.0,
     80127.0,
@@ -89,10 +88,10 @@
     64559.0,
     64702.0,
     64501.0,
-    64556.0
+    64556.0,
+    63679.0
   ],
   "priceTimestamps": [
-    "Oct 28 19:44",
     "Oct 28 23:36",
     "Oct 29 02:53",
     "Oct 29 09:21",
@@ -171,9 +170,23 @@
     "Nov 16 06:41",
     "Nov 16 16:27",
     "Nov 17 00:23",
-    "Nov 17 08:17"
+    "Nov 17 08:17",
+    "Nov 17 17:45"
   ],
   "trades": [
+    {
+      "ts": "2026-11-17T17:45:15.406105+00:00",
+      "coin": "BTC",
+      "type": "BUY",
+      "coins": 0.00031326,
+      "price": 63679.0,
+      "total": 20,
+      "fee": 0.052,
+      "pnl": null,
+      "cash": 6.2568,
+      "source": "BOT",
+      "reason": "DIP BUY"
+    },
     {
       "ts": "2026-11-17T08:17:27.083063+00:00",
       "coin": "BTC",
@@ -686,7 +699,7 @@
     "dayHigh": 86900.0,
     "dayLow": 58231.0,
     "sessionStart": 71922.0,
-    "totalBuyVolume": 560.0,
+    "totalBuyVolume": 580.0,
     "totalSellVolume": 486.2568232586736,
     "largestWin": 6.448915358196317,
     "largestLoss": -20.932743585785843,
@@ -713,8 +726,8 @@
       "totalPnl": 34.07613310423766
     },
     "DIP_BUY": {
-      "triggers": 9,
-      "totalUSD": 180.0
+      "triggers": 10,
+      "totalUSD": 200.0
     },
     "MOMENTUM": {
       "triggers": 0,
@@ -730,6 +743,6 @@
       "triggers": 2547
     },
     "runsWithNoTrade": 2547,
-    "totalRuns": 2586
+    "totalRuns": 2587
   }
 }
